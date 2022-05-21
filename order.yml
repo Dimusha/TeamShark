@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Scripts
+      run: 
+        docker build -t orders1-service
+        docker login -u dimusha99 -p dimusha9912
+        docker tag orders1-service:latest dimusha99/orders1-service
+        docker push dimusha99/order1-service
