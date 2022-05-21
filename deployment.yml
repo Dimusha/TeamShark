@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: orderserver
-        image: dimusha99/orders3-service
+        image: public.ecr.aws/p7v5s8r1/orders
         ports:
         - containerPort: 4001
