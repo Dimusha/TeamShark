@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: orderserver
-        image: public.ecr.aws/p7v5s8r1/orders
+        image: 074338348268.dkr.ecr.ap-south-1.amazonaws.com/ordersn
         ports:
         - containerPort: 4001
