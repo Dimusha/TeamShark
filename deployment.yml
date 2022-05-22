@@ -15,7 +15,7 @@ spec:
         app: orders
     spec:
       containers:
-      - name: orderserver
+      - name: ordernserver
         image: 074338348268.dkr.ecr.ap-south-1.amazonaws.com/ordersn
         ports:
         - containerPort: 4001
